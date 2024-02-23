@@ -4,6 +4,7 @@ document.getElementById("mainTitle").innerText = "Point and Click adventure game
 //const prevents it from breaking the game window reference
 const gameWindow = document.getElementById("gameWindow");
 
+
 //Main character lines
 const mainCharacter = document.getElementById("hero");
 const offCharacter = 16;
