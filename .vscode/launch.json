@@ -7,8 +7,8 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\joann\\Documents\\School SintLucas\\School\\Periode2\\SD\\PRAC\\PointAndClickGame\\index.html"
+            "name": "Open main.js",
+            "file": "${workspaceFolder}/index.html"
         }
     ]
 }

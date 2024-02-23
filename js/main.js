@@ -38,21 +38,22 @@ gameWindow.onclick = function (e) { //e for event
             tree1.style.opacity = 0.5;
             break;
         case "key":
-            getItem("Rusty key", "rustyKey");
+            console.log("Oh sweet! I got a key!");
+            document.getElementById("key").remove();
+            changeInventory('key', "add");
             break;
         case "mushroom":
-            getItem("Rusty Mushroom", "rustyMushroom");
+            changeInventory("mushroom", "add");
+            document.getElementById("mushroom").remove();
             break;
         case "doorSmallShak":
-            if (checkItem("Rusty key")) {
+            if (checkItem("key")) {
                 console.log("Door has been opened");
-            } else if (checkItem("Rusty Mushroom")) {
-                removeItem("Rusty Mushroom", "rustyMushroom")
+            } else if (checkItem("mushroom")) {
+                changeInventory("mushroom", "remove")
                 console.log("Shit, I lost my yummy mushroom!")
-
             } else {
                 console.log("Shit, I need a key because its locked.")
-
             }
             break;
         case "chicken":
@@ -69,7 +70,7 @@ gameWindow.onclick = function (e) { //e for event
      * @param {string} action 
      */
     function changeInventory(itemName, action) {
-        if (itemname == null || action == null) {
+        if (itemName == null || action == null) {
             console.error("Ruh Roh, it went wrong in changeInventory()");
             return;
         }
@@ -78,11 +79,11 @@ gameWindow.onclick = function (e) { //e for event
             case 'add':
                 Inventory.push(itemName);
                 break;
-            case 'delete':
+            case 'remove':
                 Inventory = Inventory.filter(function (newInventory) {
-
+                    return newInventory !== itemName;
                 });
-                document.getElementById(itemId).remove();
+                document.getElementById("inv-" + itemName).remove();
                 break;
         }
         updateInventory(Inventory, inventoryList);
@@ -131,9 +132,9 @@ gameWindow.onclick = function (e) { //e for event
 }
 function updateInventory(Inventory, inventoryList) {
     inventoryList.innerHTML = '';
-    Inventory.forEach(function () {
+    Inventory.forEach(function (item) {
         const inventoryItem = document.createElement("li");
-        inventoryItem.id = 'inv' + item;
+        inventoryItem.id = 'inv-' + item;
         inventoryItem.innerText = item;
         inventoryList.appendChild(inventoryItem)
 
