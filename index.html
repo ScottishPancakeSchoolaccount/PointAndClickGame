@@ -2,51 +2,59 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width = device-width, intail">
-    <title>Point and click adventure!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Point and click adventure</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
+
+
 <body>
-    <div id="title" class="foreGround">
-        <!--This is the main title of the game :) -->
-        <h1 id="mainTitle">SuperDuperAmazingAdventure!</h1>
+    <div id="title">
+        <h1 id="mainTitle">The amazing point and click adventure!</h1>
     </div>
-    <div id="gameWindow" class="foreGround">
-        <!--Inventory Box, this will display the items you have-->
-        <div id="inventoryBox" class="foreGround">
-
-
+    <div id="gameWindow">
+        <!--Inventory box-->
+        <div id="inventoryBox" class="foreground">
+            <ul id="inventoryList">
+            </ul>
         </div>
-        <!--The dialogue system where the chatting will happen between the main and NPC-->
-        <div id="dialogueBar">
+        <!--dialog bar-->
+        <div id="dialogBar" class="foreground">
             <div id="setMainDialog">
-                <div id="heroAvatar" class="foreGround">
+                <div id="heroAvatar" class="foreground">
+                    <img src="Img/Gifs/Basic Charakter Spritesheet.gif" alt="nooble">
 
                 </div>
-                <div id="heroSpeech" class="foreGround">
+                <div id="heroSpeech" class="foreground">
 
                 </div>
-                <div id="counterSpeech" class="foreGround">
+                <div id="counterSpeech" class="foreground">
 
                 </div>
-                <div id="counterCharacter" class="foreGround">
+                <div id="counterAvatar" class="foreground">
 
                 </div>
-
             </div>
-
         </div>
         <!--Foreground elements-->
-        <div id="squareTree" class="foreGround"></div>
+        <div id="key" class="foreground"></div>
+        <div id="squareTree" class="foreground"></div>
+        <div id="mushroom" class="foreground"></div>
+        <div id="doorSmallShak" class="foreground"></div>
+        <div id="chicken" class="foreground"></div>
 
-        <!--Player, main character-->
-        <div id="hero" class=character></div>
+        <!--Main Character-->
+        <div id="hero" class="character"> <img src="Img/Gifs/Basic Charakter Spritesheet.gif" alt="cat"></div>
+
 
         <!--Background elements-->
         <div id="tileMap" class="background"></div>
+        <img src="Img/Sprout Lands - Sprites - Basic pack/Tilesets/Grass.png" alt="tilemap" draggable="false">
+
     </div>
 </body>
+<script src="js/main.js"></script>
 
 </html>
