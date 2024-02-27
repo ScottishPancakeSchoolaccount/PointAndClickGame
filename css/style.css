@@ -41,7 +41,6 @@ body {
 #heroAvatar {
     width: 100px;
     height: 100px;
-    background-color: #fe9400;
     bottom: 0px;
     left: 0px;
 }
@@ -49,19 +48,25 @@ body {
 #heroSpeech {
     width: 300px;
     background-color: #FFFFFF;
+    top: 0px;
+    left: 72px;
+    opacity: 0;
 }
 
 #counterSpeech {
     width: 300px;
     background-color: #FFFFFF;
+    top: 0px;
+    right: 72px;
+    opacity: 0;
 }
 
 #counterAvatar {
     width: 100px;
     height: 100px;
-    background-color: #FF0000;
     bottom: 0px;
     right: 0px;
+    opacity: 0;
 }
 
 #squareTree {
@@ -114,7 +119,9 @@ body {
 #chicken {
     width: 32px;
     height: 32px;
-    background-color: #422828;
+    left: 200px;
+    background-color: #FFFFFF;
+
 }
 
 .background {
@@ -130,4 +137,16 @@ body {
 .foreground {
     position: absolute;
     z-index: 1000;
+}
+
+.speechBubble {
+    border-radius: 50px;
+    padding: 5px 5px 5px 20px;
+    transition: all 1.5s ease-in-out;
+}
+
+.brownBar {
+    bottom: 0;
+    width: 800px;
+    height: 72px;
 }
