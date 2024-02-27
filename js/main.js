@@ -44,12 +44,14 @@ gameWindow.onclick = function (e) { //e for event
             changeInventory('key', "add");
             break;
         case "mushroom":
+            console.log("Oh sweet! This mushroom is looking mighty tasty!");
             changeInventory("mushroom", "add");
             document.getElementById("mushroom").remove();
             break;
         case "doorSmallShak":
             if (checkItem("key")) {
                 console.log("Door has been opened");
+                changeInventory("key", "remove")
             } else if (checkItem("mushroom")) {
                 changeInventory("mushroom", "remove")
                 console.log("Shit, I lost my yummy mushroom!")
