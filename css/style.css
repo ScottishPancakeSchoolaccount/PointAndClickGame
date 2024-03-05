@@ -21,7 +21,9 @@ body {
 #inventoryBox {
     width: 180px;
     height: 80px;
-    background-color: #000000;
+    background-color: #5f3e34ce;
+    border-style: solid;
+    border-color: #af7853;
     top: 10px;
     left: 10px;
     color: white
@@ -64,8 +66,8 @@ body {
 #counterAvatar {
     width: 72px;
     height: 68px;
-    bottom: 0px;
-    right: -50px;
+    bottom: 32px;
+    right: -21px;
     opacity: 0;
 }
 
@@ -96,38 +98,63 @@ body {
     transition: all 1s ease-in-out;
 }
 
+#soundTrack {
+    width: 850px;
+    position: absolute;
+    left: 560px;
+    bottom: 320px;
+    opacity: 1;
+}
+
 #well {
-    width: 64px;
+    width: 113px;
     height: 64px;
     left: 288px;
     top: 96px;
 }
 
 #doorWizardHut {
-    width: 32px;
-    height: 64px;
-    left: 177px;
-    top: 287px;
+    width: 37px;
+    height: 37px;
+    left: 99px;
+    top: 200px;
 }
 
-#statue {
-    width: 32px;
+#chicken {
+    width: 63px;
     height: 64px;
-    left: 704px;
-    top: 287px;
-    background-color: #0022fe;
+    left: 705px;
+    top: 127px;
 }
 
 #hero {
     top: 390px;
     left: 267px;
-    width: 32px;
-    height: 32px;
+    width: 50px;
+    height: 50px;
     transition: all 1s ease-in-out;
 
 }
 
-#tileMap {}
+#tileMap {
+    background-color: #442c1c;
+}
+
+#bgOnTheRight {
+    width: 600px;
+    height: 960px;
+    background-color: #0022fe;
+    top: -120px;
+    right: -600px;
+}
+
+#bgOnTheLeft {
+    width: 600px;
+    height: 960px;
+    background-color: #0022fe;
+    top: -120px;
+    left: -600px;
+}
 
 .background {
     position: absolute;

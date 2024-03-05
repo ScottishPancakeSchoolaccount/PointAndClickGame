@@ -84,7 +84,7 @@ gameWindow.onclick = function (e) {
                     //console.log("Fuck this door is locked and I don't have a key. boohoo :(");
                 }
                 break;
-            case "statue":
+            case "chicken":
                 showMessage(heroSpeech, "Teehee, hello chicken! ^^", heroAudio);
                 setTimeout(function () { counterAvatar.style.opacity = 1; }, 4 * sec);
                 setTimeout(showMessage, 4.1 * sec, counsterSpeech, "What do you want, knobhead?", counterAudio);
@@ -94,7 +94,7 @@ gameWindow.onclick = function (e) {
                 setTimeout(showMessage, 20.1 * sec, counsterSpeech, "Tell ya what, if you could pay me first, then i'll give you a clue.", counterAudio);
                 // setTimeout(showMessage, 24.1 * sec, counsterSpeech, "Gowan! Get a move on, you prick!", counterAudio);
                 setTimeout(showMessage, 24.1 * sec, heroSpeech, "Knob.", heroAudio);
-                setTimeout(function () { counterAvatar.style.opacity = 0; }, 40 * sec); //This is the duration of the chicken sprite
+                setTimeout(function () { counterAvatar.style.opacity = 0; }, 25 * sec); //This is the duration of the chicken sprite
                 //console.log("hey you.. wanna know where the key is? It's by the graves.");
                 break;
             default:
