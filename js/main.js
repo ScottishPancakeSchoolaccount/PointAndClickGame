@@ -32,6 +32,7 @@ const counterAudio = document.getElementById("counterAudio");
 //avatar
 const counterAvatar = document.getElementById("counterAvatar");
 
+
 //Objects
 if (gameState.keyPickedUp) {
     document.getElementById("key").remove();
@@ -44,6 +45,7 @@ gameWindow.onclick = function (e) {
     var rect = gameWindow.getBoundingClientRect();
     var x = e.clientX - rect.left;
     var y = e.clientY - rect.top;
+
 
     //TODO: calc offset based on character size
     //TODO: making dialog functionality
@@ -72,14 +74,12 @@ gameWindow.onclick = function (e) {
             case "doorWizardHut":
                 if (checkItem("key")) {
                     showMessage(heroSpeech, "I opened the door. Yeah!", heroAudio);
-                    //console.log("I opened the door. Yeah!");
+                    setTimeout(function () { window.location.href = 'winner.html'; }, 4000); //This will have a 4 second delay before swapping to the win screen :D
                 } else if (checkItem("coin")) {
                     changeInventory("coin", "remove");
                     showMessage(heroSpeech, "Oh no I lost the coin! I might've needed that for something..", heroAudio);
-                    //console.log("Oh no I lost the coin and it didn't open the door.. Feel kinda stupid..");
                 } else {
                     showMessage(heroSpeech, "Fuck. It's locked, of course.", heroAudio);
-                    //console.log("Fuck this door is locked and I don't have a key. boohoo :(");
                 }
                 break;
             case "chicken":
