@@ -79,7 +79,7 @@ gameWindow.onclick = function (e) {
                     changeInventory("coin", "remove");
                     showMessage(heroSpeech, "Oh no I lost the coin! I might've needed that for something..", heroAudio);
                 } else {
-                    showMessage(heroSpeech, "Fuck. It's locked, of course.", heroAudio);
+                    showMessage(heroSpeech, "Shoot. It's locked, of course.", heroAudio);
                 }
                 break;
             case "chicken":
@@ -93,7 +93,7 @@ gameWindow.onclick = function (e) {
                     setTimeout(function () { counterAvatar.style.opacity = 1; }, 4 * sec);
                     setTimeout(showMessage, 4.1 * sec, counsterSpeech, "Oh, you actually did? I thought you were a penny pincher.", counterAudio);
                     setTimeout(showMessage, 8.1 * sec, heroSpeech, "Right, well could you tell me where I could find the key?", heroAudio);
-                    setTimeout(showMessage, 12.1 * sec, counsterSpeech, "Sure thing, tosser. The key's buried by the graves.", counterAudio);
+                    setTimeout(showMessage, 12.1 * sec, counsterSpeech, "A deal's a deal. The key's buried by the graves.", counterAudio);
                     setTimeout(showMessage, 16.1 * sec, heroSpeech, "Cheers.", heroAudio);
                     setTimeout(function () { counterAvatar.style.opacity = 0; }, 16 * sec);
                     gameState.inventory = gameState.inventory.filter(function (item) {
@@ -106,9 +106,9 @@ gameWindow.onclick = function (e) {
                     setTimeout(showMessage, 4.1 * sec, counsterSpeech, "What do you want, knobhead?", counterAudio);
                     setTimeout(showMessage, 8.1 * sec, heroSpeech, "You can talk!?", heroAudio);
                     setTimeout(showMessage, 12.1 * sec, counsterSpeech, "Of course I can, you prick. You are a talking cat.", counterAudio);
-                    setTimeout(showMessage, 16.1 * sec, heroSpeech, "Oh, right. Well could you tell me where I can find the key for the wizard hut?", heroAudio);
+                    setTimeout(showMessage, 16.1 * sec, heroSpeech, "Oh yeah silly me, could you tell me where I can find the key for the wizard hut?", heroAudio,);
                     setTimeout(showMessage, 20.1 * sec, counsterSpeech, "Tell ya what, if you could pay me first, then I'll give you a clue.", counterAudio);
-                    setTimeout(showMessage, 24.1 * sec, heroSpeech, "Knob.", heroAudio);
+                    setTimeout(showMessage, 24.1 * sec, heroSpeech, "*Hiss hiss*", heroAudio);
                     setTimeout(function () { counterAvatar.style.opacity = 0; }, 25 * sec); //This is the duration of the chicken sprite
                     //console.log("hey you.. wanna know where the key is? It's by the graves.");
                 }

@@ -1,8 +1,16 @@
 body {
     background-color: #589c58;
-
 }
 
 #insideTheTower {
     /*This is where I will add the win screen but I will do that tomorrow!*/
+    height: 100px;
+}
+
+#theWizardsLounge {
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    left: 10px;
+    bottom: 10px;
 }
