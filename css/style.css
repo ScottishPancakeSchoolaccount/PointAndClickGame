@@ -2,6 +2,7 @@ body {
     display: grid;
     grid-template-columns: auto 800px auto;
     grid-template-rows: auto 608px auto;
+    background-color: rgb(88, 156, 88);
 }
 
 #title {
@@ -12,7 +13,6 @@ body {
 #gameWindow {
     width: 850px;
     height: 450px;
-    background-color: #0022fe;
     grid-column-start: 2;
     grid-row-start: 2;
     position: relative;
@@ -78,24 +78,13 @@ body {
     background-color: #442c1c;
 }
 
-#squareTree {
-    width: 64px;
-    height: 64px;
-    background-color: #00ff00;
-    left: 400px;
-    top: 150px;
-    opacity: 1;
-    transition: all 1s ease-in-out;
-
-}
-
 #key {
     width: 32px;
     height: 32px;
     left: 86px;
     top: 450px;
-    opacity: 1;
     transition: all 1s ease-in-out;
+    background-color: yellow;
 }
 
 #soundTrack {
@@ -137,7 +126,7 @@ body {
 }
 
 #tileMap {
-    background-color: #442c1c;
+    background-color: #442c1c00;
 }
 
 #bgOnTheRight {
@@ -155,6 +144,8 @@ body {
     top: -120px;
     left: -600px;
 }
+
+
 
 .background {
     position: absolute;

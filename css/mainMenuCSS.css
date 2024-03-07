@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(88, 156, 88);
+}
+
+#mainSong {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+#cuteIntroImage {
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    left: 500px;
+}
+
+.start-button {
+    display: inline-block;
+    padding: 20px 30px;
+    font-size: 30px;
+    background-color: #61cab3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 600px;
+    left: 900px;
+}
+
+.start-button:hover {
+    background-color: #457ba0;
+}
