@@ -93,7 +93,7 @@ gameWindow.onclick = function (e) {
                     setTimeout(function () { counterAvatar.style.opacity = 1; }, 4 * sec);
                     setTimeout(showMessage, 4.1 * sec, counsterSpeech, "Oh, you actually did? I thought you were a penny pincher.", counterAudio);
                     setTimeout(showMessage, 8.1 * sec, heroSpeech, "Right, well could you tell me where I could find the key?", heroAudio);
-                    setTimeout(showMessage, 12.1 * sec, counsterSpeech, "A deal's a deal. The key's buried by the graves.", counterAudio);
+                    setTimeout(showMessage, 12.1 * sec, counsterSpeech, "A deal's a deal. The key's buried by the grass, South-West.", counterAudio);
                     setTimeout(showMessage, 16.1 * sec, heroSpeech, "Cheers.", heroAudio);
                     setTimeout(function () { counterAvatar.style.opacity = 0; }, 16 * sec);
                     gameState.inventory = gameState.inventory.filter(function (item) {
